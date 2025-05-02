@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "gulfs-display";
+    src: url("fuentes/GulfsDisplay-Normal.ttf");
+}
+@font-face {
+    font-family: "anybody";
+    src: url(fuentes/Anybody-Black.ttf);
+}
+nav,.inicial, .galeria, .precios {
+    font-family: "gulfs-display",sans-serif;
+}
+.contactos,footer,.boton{
+    font-family: "anybody";
+}
+.contenedor-flex{
+    display: flex;
+}
+.list-uno{
+    list-style-image: url(imagenes/nav-heart.svg);
+}
+.list-dos{
+    list-style-image: url(imagenes/nav-star.svg);
+}
+.list-tres{
+    list-style-image: url(imagenes/nav-flower.svg);
+}
+.list-cuatro{
+    list-style-image: url(imagenes/nav-shape.svg);
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+button {
+    all: unset;
+    cursor: pointer;
+  }
+  
