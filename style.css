@@ -36,6 +36,7 @@ nav{
 }
 .contenedor-flex{
     display: flex;
+    flex-wrap: wrap;
 }
 .list-uno{
     list-style-image: url(imagenes/nav-heart.svg);
@@ -206,3 +207,24 @@ p b{
     width: 90%;
     border: 1px solidblack;
 }
+.galeria{
+    background:linear-gradient(to bottom, white 70%,#ff6541 30%);
+    width: 100vw;
+    height: 650px; 
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.galeria-grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 430px;
+    width: 2080px;
+    gap: 10px;
+  }
+  .galeria-grid img {
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    border: 1px solid black;
+  }
