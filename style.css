@@ -1,3 +1,6 @@
+html{
+    max-width: 767px;
+}
 @font-face {
     font-family: "gulfs-display";
     src: url("fuentes/GulfsDisplay-Normal.ttf");
@@ -9,8 +12,23 @@
 nav,.inicial, .galeria, .precios {
     font-family: "gulfs-display",sans-serif;
 }
+header,section,footer{
+    padding: 3em;
+}
 .contactos,footer,.boton{
     font-family: "anybody";
+}
+html, body, section{
+    height: 100%;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 300vw;
+    background-color: #ffb4cc; 
+    padding: 3em; 
+    z-index: 1000;
 }
 .contenedor-flex{
     display: flex;
@@ -32,12 +50,97 @@ li a{
     color: black;
 }
 .circle{
-    height: 100px;
-    width: 100px;
+    height: 2em;
+    width: 2em;
     border-radius: 50%;
 }
 button {
     all: unset;
     cursor: pointer;
+}
+.img-nav{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 1%;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+    margin-bottom: 2vh;
+    margin-left: 80%;
+}
+
+html{
+    background-color: #ffb4cc;
+}
+.contenedor-grid{
+    display: grid;
+}
+.items-navegador{
+    display: none;
+
+}
+#toggle-nav:checked ~ .items-navegador {
+    display: block;
+}
+#toggle-nav:checked + label .img-nav {
+    background-image: url(imagenes/x.svg);
+    background-repeat: no-repeat;
+}
+
+#toggle-nav:checked + label .imagen-inicial {
+    display: none;
+}
+header{
+    min-height: 20vh;
+    z-index: 1;
+}
+.inicial div h1{
+    color:#0153f9 ;
+    text-align: center;
+    font-size:clamp(2rem, 10vw, 15rem);
+}
+.img-ppal{
+    width:  60vw;
+    border: 2px solid black;
+    border-radius: 100%/70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nosotros{
+    background-color: #fff35f;
+}
+.inicial{
+    border-bottom: 2px solid black;
+    min-height: 40vh;
+}
+.relative{
+    position: relative;
+    min-height: 100%;    
+}
+.absolute{
+    position: absolute;
+}
+.inicial-one{
+    left: 1px;
+    height: 15%;
+    bottom: 40%;
+}
+.inicial-uno{
+    height: 40%;
+    bottom:-55%;
+}
+.inicial-dos{
+    height:20% ;
+    left:90% ;
+    bottom: -70%;
+}
+.inicial-tres{
+    height: 20%;
+    left: 85%;
+}
+.imagen-inicial{
+    height: 100%;
+}
+.inicial-cinco {
+    width: 20%;
+    margin-top: 75%; 
+    left: 10%;
   }
-  

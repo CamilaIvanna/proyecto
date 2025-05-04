@@ -5,42 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        img{
-            height: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
     <header>
         <nav>
-            <button>
-                <div class="circle">
-                    <img src="imagenes/lineas_nav.svg" alt="">
+            <input type="checkbox" id="toggle-nav" hidden>
+            <label for="toggle-nav">
+                <div class="boton-nav">
+                    <div class="circle img-nav">
+                        <img src="imagenes/lineas_nav.svg" alt="" class="imagen-inicial">
+                    </div>
                 </div>
-            </button>
-            <ol class="contenedor-flex">
-                <li class="list-uno"><a href="#"">NOSOTROS</a></li>
-                <li class="list-dos"><a href="#">GALERIA</a></li>
-                <li class="list-tres"><a href="#">PRECIOS</a></li>
-                <li class="list-cuatro"><a href="#">CONTACTO</a></li>
-            </ol>
-
+            </label>
+            <div class="items-navegador">
+                <ol class="contenedor-grid items-navegad">
+                    <li class="list-uno"><a href="#">NOSOTROS</a></li>
+                    <li class="list-dos"><a href="#">GALERIA</a></li>
+                    <li class="list-tres"><a href="#">PRECIOS</a></li>
+                    <li class="list-cuatro"><a href="#">CONTACTO</a></li>
+                </ol>
+            </div>
         </nav>
     </header>
     <main>
         <section class="inicial">
-            <div>
-                <h1>CAPTURAMOS LOS SENTIMIENTOS</h1>
-                <img src="imagenes/hero-star.svg" alt="">
-                <img src="imagenes/hero-star.svg" alt="">
-                <img src="imagenes/hero-star.svg" alt="">
-                <img src="imagenes/hero-small-shape.svg" alt="">
+            <div class="relative">
+                <h1>CAPTURAMOS <br>LOS <br>SENTIMIENTOS</h1>
+                <img src="imagenes/hero-star.svg" alt="" class="absolute inicial-one">
+                <img src="imagenes/hero-star.svg" alt=""  class="absolute inicial-uno">
+                <img src="imagenes/hero-star.svg" alt="" class="absolute inicial-dos">
+                <img src="imagenes/hero-small-shape.svg" alt="" class="absolute inicial-tres">
             </div>
-            <div>
-                <img src="imagenes/img_pareja_frente_a_frente.jpg" alt="">
-                <img src="imagenes/carita_rosa_feliz.png" alt="">
-                <div></div>
+            <div class="relative" >
+                <img src="imagenes\img1.jpg" alt="" class="img-ppal absolute ">
+                <img src="imagenes/carita_rosa_feliz.png" alt="" class="absolute inicial-cinco">
             </div>
            </section> 
            <section class="nosotros">
