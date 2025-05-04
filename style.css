@@ -2,6 +2,10 @@ html{
     max-width: 767px;
 }
 @font-face {
+    font-family: "futurino";
+    src: url("fuentes/futurino-outline-bold.ttf"); 
+}
+@font-face {
     font-family: "gulfs-display";
     src: url("fuentes/GulfsDisplay-Normal.ttf");
 }
@@ -15,7 +19,7 @@ nav,.inicial, .galeria, .precios {
 header,section,footer{
     padding: 3em;
 }
-.contactos,footer,.boton{
+.contactos,footer,.boton, .nosotros{
     font-family: "anybody";
 }
 html, body, section{
@@ -66,7 +70,6 @@ button {
     margin-bottom: 2vh;
     margin-left: 80%;
 }
-
 html{
     background-color: #ffb4cc;
 }
@@ -106,10 +109,11 @@ header{
 }
 .nosotros{
     background-color: #fff35f;
+    padding-top: 50%;
 }
 .inicial{
     border-bottom: 2px solid black;
-    min-height: 40vh;
+    min-height: 60vh;
 }
 .relative{
     position: relative;
@@ -144,3 +148,61 @@ header{
     margin-top: 75%; 
     left: 10%;
   }
+ol li{
+    font-size: 2rem;
+}
+.space-b{
+    justify-content: space-between;
+}
+.titulo-dos{
+    font-family: "futurino";
+    font-size: 7rem;
+    color: #0153f9;
+    text-align: center;
+}
+.ovalo{
+    width: 250px;
+    height: 100px;
+    border: 4px solid white;
+    border-radius: 50%;
+    left: 25%;
+    transform: rotate(-25deg);
+}
+p{
+    font-size: 2rem;
+}
+p b{
+    font-size: 2.5rem;
+}
+.con-div{
+    position: relative;
+    height: 100vh;
+}
+.contenedor-imagen-nosotros{
+    position: absolute;
+    width: 65vw;
+    height: 70vh;
+    background-color: #ffb4ce;
+    border: 1px solid black;
+}
+.uno{
+    top: 12%;
+    left: 11%;
+    rotate: -5deg;
+}
+.dos{
+    top: 10%;
+    rotate: -5deg;
+    left: 13%;
+}
+.tres{
+    background-color: white;
+    rotate: -5deg;
+    top: 8%;
+    left: 15%;
+}
+.tres img{
+    margin: 5%;
+    width: 90%;
+    border: 1px solidblack;
+}
