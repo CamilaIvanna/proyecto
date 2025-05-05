@@ -639,7 +639,7 @@ a{
         display: block;
     }
     #grid-1,#grid-2{
-        width: 50vw;
+        width: 45vw;
         position: absolute;
     }
     .contenedor-imagen-nosotros {
@@ -650,9 +650,87 @@ a{
     } 
     .contenedor-grid-t{
         position: relative;
-        min-height: 40vh;
+        height: 200vh;
     }
     #grid-1{
         left: 50%;
+    }
+    #grid-2{
+        top: 30%;
+    }
+    .precios .contenedor-grid{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 220px);
+    }
+    .precios-3,.precios-4,.precios-5,.precios-6,.precios-7,.precios-8{
+        grid-row: span 2;
+    }
+    .precios-1,.precios-2,.precios-9{
+        grid-column: span 3;
+    }
+    .precios-1{
+        grid-column: span 2;
+        order: 1;
+    }
+    .precios-2{
+        grid-column: span 2;
+        order: 5;
+    }
+    .precios-3{
+        order: 2;
+    }   
+    .precios-4{
+        order: 3;
+    }
+    .precios-5{
+        order: 4;
+    }
+    .precios-6{
+        order: 6;
+    }
+    .precios-7{
+        grid-column: span 2;
+        order: 7;
+    }
+    .precios-8{
+        grid-column: span 2;
+        order: 8;
+        grid-row: span 1;
+    }
+    .precios-9{
+        grid-column: span 2;
+        order: 9;
+    }
+    .precio-titulo{
+        font-size: 2em;
+    }
+    .subtitulo-precios-1, .subtitulo-precios-2, .subtitulo-precios-3, .subtitulo-precios-4, .subtitulo-precios-5, .subtitulo-precios-6, .subtitulo-precios-7, .subtitulo-precios-8, .subtitulo-precios-9{
+        font-size: 1.2em;
+    }
+    .sider {
+        width: 60%;
+        margin-right: 40%;
+    }
+    .cantidad{
+        width: 15vw;
+        height: 8vh;
+    }
+    .circulito{
+        height: 3vh;
+        width: 3vw;
+    }
+    .lupa{
+        height: 2vh;
+    }
+    .c-2{
+        height: 2vh;
+        width: 2vw;
+    }
+    .enviar{
+        height: 100px;
+        width: 100px;
+    }
+    .enviar p{
+        font-size: .9rem;
     }
 }
