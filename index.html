@@ -4,54 +4,272 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
 </head>
 <body>
     <header>
         <nav>
-
+            <input type="checkbox" id="toggle-nav" hidden>
+            <label for="toggle-nav">
+                <div class="boton-nav">
+                    <div class="circle img-nav">
+                        <img src="imagenes/lineas_nav.svg" alt="" class="imagen-inicial">
+                    </div>
+                </div>
+            </label>
+            <div class="items-navegador">
+                <ol class="contenedor-grid items-navegador">
+                    <li class="list-uno"><a href="#nosotros">NOSOTROS</a></li>
+                    <li class="list-dos"><a href="#galeria">GALERIA</a></li>
+                    <li class="list-tres"><a href="#precio">PRECIOS</a></li>
+                    <li class="list-cuatro"><a href="#contacto">CONTACTO</a></li>
+                </ol>
+            </div>
         </nav>
     </header>
-   <section class="inicial">
-    <div>
-        <h1>CAPTURAMOS LOS SENTIMIENTOS</h1>
-    </div>
-    <div>
-        <img src="" alt="">
-        <div></div>
-    </div>
-   </section> 
-   <section class="nosotros">
-        <div>
-            <h1>HOLA AQUI</h1>
-            <p>Somos catadores de pasteles profesionales , pregoneros de bodas y amantes del amor. En resumen, ¡Somos grandes fanaticos del matrimonio! El matrimonio es un compromiso muy especial y tu boda marca el testimonio y la celebración de este vinculo. Estamos muy emocionados por este increible próximo capitulo de tu vida. ¡Lo recomendamos de corazón!</p>
-        </div>
-        <div> 
-            <p><b>TUS NUPCIALISTA</b></p>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <div>
-                        <img src="" alt="">
+    <main>
+        <section class="inicial" id="inicial">
+            <div class="relative">
+                <h1 class="tituloppal">CAPTURAMOS <br>LOS <br>SENTIMIENTOS</h1>
+                <img src="imagenes/hero-star.svg" alt="" class="absolute inicial-one">
+                <img src="imagenes/hero-star.svg" alt=""  class="absolute inicial-uno">
+                <img src="imagenes/hero-star.svg" alt="" class="absolute inicial-dos">
+                <img src="imagenes/hero-small-shape.svg" alt="" class="absolute inicial-tres">
+            </div>
+            <div class="relative" >
+                <img src="imagenes\img1.jpg" alt="" class="img-ppal absolute ">
+                <img src="imagenes/carita_rosa_feliz.png" alt="" class="absolute inicial-cinco">
+                <img src="imagenes/img_pareja_frente_a_frente.jpg" alt="" class="d-none absolute oculta-1">
+                <img src="imagenes/img_muchacha_perfil.jpg" alt="" class="d-none absolute oculta-2">
+            </div>
+           </section> 
+           <section class="nosotros" id="nosotros">
+                <div class="contenedor-flex space-b">
+                    <div class="contenedor-flex">
+                        <img src="imagenes/circulo_negro.svg" alt="">
+                        <p class="d-none-p">LOVERS OF LOVE</p>
+                    </div>
+                    <div class="contenedor-flex">
+                        <p class="d-none-p">FINE ART FILM PHOTOGRAPHERS</p>
+                        <img src="imagenes/circulo_negro.svg" alt="">
+                    </div>
+                </div>
+                <div class="contenedor-grid-t">
+                    <div grid-1 id="grid-1" >
+                        <div class="relative ">
+                            <div class="ovalo absolute"></div>
+                        </div>                    
+                        <div class="contenedor-flex ">
+                            <h1 class="titulo-dos">HOLA <br> AQUI</h1>
+                            <p class="letra-">Somos catadores de pasteles profesionales , pregoneros de bodas y amantes del amor. En resumen, ¡Somos grandes fanaticos del matrimonio! El matrimonio es un compromiso muy especial y tu boda marca el testimonio y la celebración de este vinculo. Estamos muy emocionados por este increible próximo capitulo de tu vida. ¡Lo recomendamos de corazón!</p>
+                        </div>
+                        <div class="contenedor-flex"> 
+                            <p class=""><b>TUS NUPCIALISTA</b></p>
+                            <img src="imagenes/anillos.svg" alt="" class="img-nosotros">
+                            <img src="imagenes/estrella_naranja.svg" alt="" class="img-nosotros" >
+                        </div>
+                    </div>
+                    <div class="grid-2" id="grid-2">
+                        <div class="con-div ">
+                            <div class="contenedor-imagen-nosotros uno"></div>
+                            <div class="contenedor-imagen-nosotros dos"></div>
+                            <div class="contenedor-imagen-nosotros tres">
+                                <img src="imagenes/img2.jpg" alt="Imagen-Nosotros" class="imagen-nosotros">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-flex space-b">
+                    <img src="imagenes/circulo_negro.svg" alt="">
+                    <img src="imagenes/circulo_negro.svg" alt="">
+                </div>
+           </section>
+           <section class="galeria" id="galeria">
+                <div class="contenedor-flex galeria-flex">
+                    <img src="imagenes/galeria/img1.jpg" alt="" class="img-galeria galeria1">
+                    <img src="imagenes/galeria/img2.jpeg" alt="" class="img-galeria galeria2">
+                    <img src="imagenes/galeria/img3.jpeg" alt="" class="img-galeria galeria3">
+                    <img src="imagenes/galeria/img4.jpg" alt="" class="img-galeria galeria4">
+                    <img src="imagenes/galeria/img5.jpg" alt="" class="img-galeria galeria5">          
+                    <img src="imagenes/galeria/img6.jpg" alt="" class="img-galeria galeria6">
+                    <img src="imagenes/galeria/img7.jpg" alt="" class="img-galeria galeria7">  
+                    <img src="imagenes/galeria/img8.jpg" alt="" class="img-galeria galeria8">
+                    <img src="imagenes/galeria/img9.jpg" alt="" class="img-galeria galeria9">
+                    <img src="imagenes/galeria/img10.jpeg" alt="" class="img-galeria galeria10">
+                    <img src="imagenes/galeria/img11.jpg" alt="" class="img-galeria galeria11">
+                    <img src="imagenes/galeria/img12.jpg" alt="" class="img-galeria galeria12">
+                </div>
+           </section>
+           <section class="precios" id="precio">
+            <div class="contenedor-grid contenedor ">
+                <div class="item precios-1">
+                    <h1 class="precio-titulo">CONSTRUYE TU PROPIO PAQUETE</h1>
+                </div>
+                <div class="item precios-2">
+                    <div class="contenedor-flex precios-flex space-b">
+                        <div class="contenedor-flex precios-flex">
+                            <h2 class="subtitulo-precios-1">HORAS TOTALES <img src="imagenes/signoazul.png" alt="" class="interrogante"></h2>
+                        </div>
+                        <div class="circle horas">3</div>
+                    </div>
+                    <div class="input range">
+                        <input type="range" name="" id="sider" min="0" max="100" value="10" class="sider">
+                        <div class="image-mover"></div>
+                    </div>
+                </div>
+                <div class="item precios-3" >
+                    <div class="contenedor-flex precios-flex">
+                        <h2 class="subtitulo-precios-2">SESIÓN DE COMPROMISO <img src="imagenes/signonaranja.png" alt="" class="interrogante"></h2>
+                    </div>
+                    <div class="input checkbox">
+                        <label for="check" class="mycheck" id="mycheck-orange">
+                            <input type="checkbox" name="check" id="check">
+                            <span> <img src="imagenes/carita-_-.svg" alt=""></span>
+                        </label>
+                    </div>
+                    <h2 class="subtitulo-precios-2">NO</h2>
+                </div>
+                <div class="item precios-4">
+                    <div class="contenedor-flex precios-flex ">
+                        <h2 class="subtitulo-precios-3">VIDEO DE LA CEREMONIA <img src="imagenes/signoazul.png" alt="" class="interrogante"></h2>
+                        
+                    </div>
+                    <div class="input checkboxx">
+                        <label for="check-2" class="mycheck-2" id="mycheck-pink">
+                            <input type="checkbox" name="check-2" id="check-2">
+                            <span> <img src="imagenes/carita-_-.svg" alt=""></span>
+                        </label>
+                    </div>
+                    <h2 class="subtitulo-precios-3">NO</h2>
+                    <div class="relative">
+                        <img src="imagenes/anillos_naranja_Azul.svg" alt="" class="absolute anillos">
+                    </div>
+                </div>
+                <div class="item precios-5">
+                    <div class="contenedor-flex precios-flex space-a">
+                        <h2 class="subtitulo-precios-4">SOLO DIGITAL <img src="imagenes/signoblanco.png" alt="" class="interrogante"></h2>
+                    </div>
+                    <img src="imagenes/brujula.svg" alt="" class="brujula">
+                    <div class="contenedor-flex precios-flex space-a">
+                        <h2 class="subtitulo-precios-5">FILM + DIGITAL <img src="imagenes/signoazulito.png" alt="" class="interrogante"></h2>
+ 
+                    </div>
+                </div>
+                <div class="item precios-6">
+                    <div class="contenedor-flex precios-flex space-a">
+                        <h2 class="subtitulo-precios-6">CABINA DE FOTOS  <img src="imagenes/signoazul.png" alt="" class="interrogante"></h2>
+                    </div>
+                    <div class="cantidad contenedor-flex">
+                        <img src="imagenes/lupa-rosa.png" alt="" class="lupa">
+                        <div class="circle circulito contenedor-flex">
+                            <div class="circle circulito c-2"></div>
+                        </div>
+                        <img src="imagenes/lupa-mas.png" alt="" class="lupa">
+                    </div>
+                    <h2 class="subtitulo-precios-7">HORAS</h2>
+                </div>
+                <div class="item precios-7">
+                    <div class="contenedor-flex space-a">
+                        <div class="contenedor-flex precios-flex ">
+                            <h2 class="subtitulo-precios-8">LUGAR                             <img src="imagenes/signoblanco.png" alt=""class="interrogante"></h2>
+                        </div>
+                        <p class="texto-blanco">Seleccione una región</p>
+                    </div>
+                    <img src="imagenes/mapa.svg" alt="">
+                    <div class="relative">
+                        <img src="imagenes/camara.svg" alt="" class="absolute camara">
+                    </div>
+                </div>
+                <div class="item precios-8">
+                    <h2 class="subtitulo-precios-9">TOTAL</h2>
+                    <h1 class="subtitulo-precios-10">$1,938</h1>
+                </div>
+                <div class="item precios-9">
+                    <h2 class="subtitulo-precios-11">ENVÍA MI PAQUETE</h2>
+                    <p class="subtitulo-precios-12">Email</p>
+                    <div class="relative">
+                        <div class="circle enviar contenedor-flex absolute">
+                            <p> PRESIONA PARA CAPTURAR</p>
+                         </div>
                     </div>
                 </div>
             </div>
+           </section>
+           <section class="contactos" id="contacto">
+            <div class="relative">
+                <div class="absolute contactos-1">
+                    <div class="relative collage">
+                        <img src="imagenes/couple.svg" alt="" class="collage-1 absolute">
+                        <img src="imagenes/radio.svg" alt="" class="collage-2 absolute">
+                        <img src="imagenes/yay.svg" alt="" class="collage-3 absolute">
+                        <img src="imagenes/disco_hand.svg" alt="" class="collage-4 absolute">
+                        <img src="imagenes/corazon.svg" alt="" class="collage-5 absolute">
+                        <img src="imagenes/energia.svg" alt="" class="collage-6 absolute">
+                        <img src="imagenes/carita_azul.svg" alt="" class="collage-7 absolute">
+                        <img src="imagenes/loop-naranja.svg" alt="" class="collage-8 absolute">
+                        <img src="imagenes/drinks.svg" alt="" class="collage-9 absolute">
+                        <img src="imagenes/anillo_amarillo_azul.svg" alt="" class="collage-10 absolute">
+                        <img src="imagenes/stars_azules.svg" alt="" class="collage-11 absolute">
+                        <img src="imagenes/loop_azul.svg" alt="" class="collage-12 absolute">
+                    </div>
+                </div>
+                <div class="absolute contactos-2">
+                    <div>
+                        <h1 class="titulo-fecha">CONSULTA TU FECHA</h1>
+                        <p>¡Revisaremos el calendario para tu GRAN DIA!</p>
+                    </div>
+                    <div class="contenedor-flex space-b">
+                       <span class="fecha">00/00/00</span> 
+                       <div class="contenedor-flex ">
+                            <img src="imagenes/flecha_izquierda_naranja.svg" alt="">
+                            <div class="circle circle-orange contenedor-flex">
+                                <img src="imagenes/flecha_derecha_rosa.svg" alt="">
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+
+
+           </section>
+    </main>
+    <footer class="relative">
+        <div class="contenedor-grid redes absolute">
+            <div class="item-redes-1">
+                <p>SIGUE NUESTRAS REDES Y CONTACTANOS</p>
+            </div>
+            <div class="item">
+                <a href="">POLITICAS DE PRIVACIDAD</a>
+            </div>
+            <div class="item">
+                <div class="circle contenedor-flex fb">
+                    <img src="imagenes/facebook.svg" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <div class="circle contenedor-flex ig">
+                    <img src="imagenes/instagram.svg" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <div class="circle contenedor-flex x">
+                    <img src="imagenes/email.svg" alt="">
+                </div>
+            </div>
         </div>
-   </section>
-   <section class="galeria">
-
-   </section>
-   <section class="precios">
-
-   </section>
-   <section class="contactos">
-    <footer>
-
     </footer>
-   </section>
-   <div class="boton">
-
-   </div>
-
+    <button id="chat-button" class="circle contenedor-flex boton buton" >CHAT</button>
+   <script>
+    const slider = document.getElementById('sider');
+    const image = document.querySelector('.image-mover');
+    function updateImagePosition() {
+    const value = slider.value;
+    image.style.left = value + '%';
+    }
+    slider.addEventListener('input', updateImagePosition);
+    updateImagePosition();
+   </script>
 </body>
+
 </html>
