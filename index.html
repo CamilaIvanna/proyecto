@@ -200,48 +200,43 @@
                 <h1 class="titulo-fecha">CONSULTA TU FECHA</h1>
                 <p>¡Revisaremos el calendario para tu GRAN DIA!</p>
             </div>
-            <div class="container flex">
+            <div class="contenedor-flex space-b">
                <span class="fecha">00/00/00</span> 
-               <div>
-                <img src="imagenes/flecha_izquierda_naranja.svg" alt="">
-                <div class="circle">
-                    <img src="imagenes/flecha_derecha_rosa.svg" alt="">
-                </div>
-                <hr>
+               <div class="contenedor-flex ">
+                    <img src="imagenes/flecha_izquierda_naranja.svg" alt="">
+                    <div class="circle circle-orange contenedor-flex">
+                        <img src="imagenes/flecha_derecha_rosa.svg" alt="">
+                    </div>
                </div>
             </div>
            </section>
     </main>
     <footer>
-        <div class="container grid">
-            <div class="item">
+        <div class="contenedor-grid redes">
+            <div class="item-redes-1">
                 <p>SIGUE NUESTRAS REDES Y CONTACTANOS</p>
             </div>
             <div class="item">
                 <a href="">POLITICAS DE PRIVACIDAD</a>
             </div>
             <div class="item">
-                <div class="circle">
+                <div class="circle contenedor-flex fb">
                     <img src="imagenes/facebook.svg" alt="">
                 </div>
             </div>
             <div class="item">
-                <div class="circle">
+                <div class="circle contenedor-flex ig">
                     <img src="imagenes/instagram.svg" alt="">
                 </div>
             </div>
             <div class="item">
-                <div class="circle">
+                <div class="circle contenedor-flex x">
                     <img src="imagenes/email.svg" alt="">
                 </div>
             </div>
         </div>
     </footer>
-   <div class="boton">
-    <div class="circle">
-        CHAT
-    </div>
-   </div>
+    <button id="chat-button" class="circle contenedor-flex boton buton" >CHAT</button>
    <script>
     const slider = document.getElementById('sider');
     const image = document.querySelector('.image-mover');

@@ -519,3 +519,75 @@ p b{
     left: 75%;
     z-index: 1;
 }
+.titulo-fecha{
+    color: #0153f9;
+    font-size: 2.5rem;
+    font-family: "gulfs-display";
+}
+.fecha{
+    color: #ff6541;
+    font-size: 3cqmin;
+}
+.circle-orange{
+    background-color: #ff6541;
+}
+.redes{
+    background-color: white;
+    border: 1px solid black;  
+    box-shadow: -5px 6px 1px rgba(0, 0,0,4);  
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+.item-redes-1{
+    grid-column: span 4;
+}
+.fb,.ig,.x{
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 1%;
+    height: 4rem;
+    width: 4rem;
+}
+.fb{
+    background-color:#9ef3f3 ;
+}
+.ig{
+    background-color: #ffb4cc;
+}
+.x{
+    background-color: #fff35f;
+}
+.redes .item{
+    border: 1px solid black;
+    padding: 10%;
+}
+.redes p{
+    padding-left: 10%;
+}
+a{
+    color: black;
+}
+.buton{
+    height: 100px;
+    width: 100px;
+    background-color:#fff35f;
+    box-shadow: 5px 6px 1px rgba(0, 0,0,4);
+    bottom: -10%;
+}
+#chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:#fff35f;
+    box-shadow: 5px 6px 1px rgba(0, 0,0,4);
+    cursor: pointer;
+    z-index: 1000;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+  }
+  @media screen and (min-width: 768px) {
+    html{
+        max-width: 2000px;
+    }
+    
+  }
