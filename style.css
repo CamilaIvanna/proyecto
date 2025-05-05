@@ -733,4 +733,21 @@ a{
     .enviar p{
         font-size: .9rem;
     }
+    .contactos-1, .contactos-2{
+        width: 45%;
+    }
+    .contactos{
+        height: 50vh;
+    }
+    .contactos-2{
+        right: 5%;
+    }
+    .redes{
+        right: -5%;
+        top: -30%;
+        width: 50vw;
+    }
+    footer{
+        background-color: black;
+    }
 }
