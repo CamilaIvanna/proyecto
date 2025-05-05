@@ -24,19 +24,15 @@ header,section,footer{
 }
 html, body, section{
     height: 100%;
+    width: 100%;
+    margin: 0;
 }
-nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 300vw;
-    background-color: #ffb4cc; 
-    padding: 3em; 
-    z-index: 1000;
-}
+
 .contenedor-flex{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .list-uno{
     list-style-image: url(imagenes/nav-heart.svg);
@@ -93,8 +89,10 @@ html{
     display: none;
 }
 header{
-    min-height: 20vh;
-    z-index: 1;
+    position:sticky;
+    top: 0;
+    z-index: 2000000000;
+    background-color: #ffb4cc;
 }
 .inicial div h1{
     color:#0153f9 ;
@@ -152,9 +150,6 @@ header{
 ol li{
     font-size: 2rem;
 }
-.space-b{
-    justify-content: space-between;
-}
 .titulo-dos{
     font-family: "futurino";
     font-size: 7rem;
@@ -177,14 +172,17 @@ p b{
 }
 .con-div{
     position: relative;
-    height: 100vh;
+    height: 75vh;
 }
 .contenedor-imagen-nosotros{
     position: absolute;
     width: 65vw;
-    height: 70vh;
+    height: 55vh;
     background-color: #ffb4ce;
     border: 1px solid black;
+}
+.imagen-nosotros{
+    height: 52vh;
 }
 .uno{
     top: 12%;
@@ -214,17 +212,220 @@ p b{
     overflow-x: auto;
     overflow-y: hidden;
 }
-.galeria-grid {
-    display: flex;
-    flex-wrap: wrap;
+.galeria-flex {
     height: 430px;
     width: 2080px;
     gap: 10px;
   }
-  .galeria-grid img {
+  .galeria-flex img {
     height: 300px;
     object-fit: cover;
     display: block;
     border-radius: 20px;
     border: 1px solid black;
   }
+.precio-titulo{
+    color: #ff6541;
+    font-size: 5em;
+    
+}
+.contenedor .item{
+    border: 1px solid black;
+    padding: 5%;
+    text-align: center;
+}
+.precios .contenedor-grid{
+    grid-template-columns:  50% 50%;
+}
+.precios-1,.precios-2,.precios-7, .precios-8,.precios-9{
+    grid-column: span 2;
+}
+.precios-3,.precios-6{
+    background-color: #fff35f;
+}
+.precios-4{
+    background-color: white;
+}
+.precios-5{
+    background-color: #0153f9;
+}
+.precios-7{
+    background-color: black;
+}
+.precios-8{
+    background-color: #ff6541;
+}
+.interrogante{
+    height: 2rem;
+}
+.precios-flex{
+    align-items: center;
+}
+.horas{
+    border: 3px solid black;
+    padding: 1%;
+    background-color: #0153f9;
+    color: white;
+}
+.input.range {
+    position: relative;
+    width: 80vw;
+    margin: 50px auto;
+  }
+  
+  .sider {
+    width: 80%;
+    height: 15px;
+    -webkit-appearance: none;
+    background-color: #fff35f;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 0;
+  }
+  
+  .image-mover {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-image: url("imagenes/disco.svg");
+    background-size: cover;
+    top: -45px; /* Posición arriba del slider */
+    left: 50%; /* Posición inicial (corresponde a value=50) */
+    transform: translateX(-50%);
+    pointer-events: none;
+    transition: left 0.1s ease;
+  }
+  
+  /* Estilo del thumb del slider */
+  .sider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #ff5e00;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Para Firefox */
+  .sider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #ff5e00;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .space-a{
+    justify-content: space-around;
+  }
+  .subtitulo-precios-2{
+    color:#ff6541;
+    font-size: 2.5em;
+  }
+  .subtitulo-precios-1, .subtitulo-precios-3, .subtitulo-precios-6, .subtitulo-precios-7{
+    color:#0153f9;
+    font-size: 2.5em;
+  }
+  .subtitulo-precios-4{
+    color: white;
+    font-size: 2.5em;
+  }
+  .subtitulo-precios-5{
+    color: #0249c7;
+    font-size: 2.5em;
+  }
+  .brujula{
+    height: 30%;
+  }
+  .precios{
+    padding: 0;
+  }
+  .mycheck span{
+    background-color:#ff6541 ;;
+  }
+  .mycheck-2 span{
+    background-color: #ffb4cc;
+  }
+  .mycheck span, .mycheck-2 span{
+    width: 10rem;
+    height: 7rem;
+    display: inline-block;
+    border-radius: 100px;
+    box-shadow: 5px 6px 1px rgba(0, 0,0,4);
+    cursor: pointer;
+    position: relative;
+    border: 2px solid black;
+  }
+.mycheck input:checked ~span::after, .mycheck input:checked ~span img{
+    translate: 7vw;
+}
+.mycheck span::after{
+    background-color:#fff35f;
+}
+.mycheck-2 span::after{
+    background-color:#0153f9}
+.mycheck span::after,.mycheck-2 span::after {
+    content:"";
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform:  scale(0.8) rotate(-25deg); 
+    border: 2px solid black;
+}
+.mycheck input, .mycheck-2 input{
+    display: none;
+}
+.mycheck img, .mycheck-2 img{
+    position: absolute;
+    left:20px;
+    top: 20px;
+    z-index: 1;
+    border: 1px solid black;
+    border-radius: 50%;
+    transform: rotate(-20deg);
+}
+.mycheck-2 input:checked ~span::after, .mycheck-2 input:checked ~span img{
+    translate: 7vw;
+}
+.anillos{
+    right: 40vw;
+    top: -8vh;
+}
+.cantidad{
+    background-color: white;
+    width: 40vw;
+    height: 10vh;
+    border-radius: 100px;
+    box-shadow: 5px 6px 1px rgba(0, 0,0,4);
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.lupa{
+    height: 5vh;
+}
+.circulito{
+    height: 5vh;
+    width: 7vw;
+    border: 1px solid black;
+    background-color: #ffb4cc;
+}
+.c-2{
+    height: 4vh;
+    width: 5vw;
+    border: 1px solid black;
+    background-color: white;
+}
+.subtitulo-precios-8{
+    color: white;
+    font-size: 2.5rem;
+}
+.texto-blanco{
+    color: white;
+    font-family: "anybody";
+    font-size: 1.5rem;
+}
+.space-b{
+    justify-content: space-between;
+}

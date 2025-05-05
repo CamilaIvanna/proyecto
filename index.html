@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
 </head>
 <body>
     <header>
@@ -65,9 +65,13 @@
                         <img src="imagenes/img2.jpg" alt="Imagen-Nosotros" class="imagen-nosotros">
                     </div>
                 </div>
+                <div class="contenedor-flex space-b">
+                    <img src="imagenes/circulo_negro.svg" alt="">
+                    <img src="imagenes/circulo_negro.svg" alt="">
+                </div>
            </section>
            <section class="galeria">
-                <div class="contenedor-grid galeria-grid">
+                <div class="contenedor-flex galeria-flex">
                     <img src="imagenes/galeria/img1.jpg" alt="" class="img-galeria galeria1">
                     <img src="imagenes/galeria/img2.jpeg" alt="" class="img-galeria galeria2">
                     <img src="imagenes/galeria/img3.jpeg" alt="" class="img-galeria galeria3">
@@ -83,73 +87,88 @@
                 </div>
            </section>
            <section class="precios">
-            <div class="contenedor">
-                <div class="item">
-                    <h1>CONSTRUYE TU PROPIO PAQUETE</h1>
+            <div class="contenedor-grid contenedor ">
+                <div class="item precios-1">
+                    <h1 class="precio-titulo">CONSTRUYE TU PROPIO PAQUETE</h1>
                 </div>
-                <div class="item">
-                    <h2>HORAS TOTALES</h2>
-                    <img src="imagenes/interrogante.svg" alt="">
-                    <div class="circulo">3</div>
-                    <div class="input range">
-                        <input type="range" name="" id="">
-                    </div>
-                </div>
-                <div class="item">
-                    <h2>SESIÓN DE COMPROMISO</h2>
-                    <img src="imagenes/interrogante.svg" alt="">
-                    <div class="input checkbox">
-                        <input type="checkbox" name="check" id="check">
-                        <label for="check"></label>
-                    </div>
-                </div>
-                <div class="item">
-                    <h2>VIDEO DE LA CEREMONIA</h2>
-                    <img src="imagenes/interrogante.svg" alt="">
-                    <div class="input checkbox">
-                        <input type="checkbox" name="check" id="check">
-                        <label for="check"></label>
-                    </div>
-                </div>
-                <div class="item">
-                    <span>
-                        <h2>SOLO DIGITAL</h2>
-                        <img src="imagenes/interrogante.svg" alt="">
-                    </span>
-                    <img src="imagenes/brujula.svg" alt="">
-                    <span>
-                        <h2>FILM + DIGITAL</h2>
-                        <img src="imagenes/interrogante.svg" alt="">
-                    </span>
-                </div>
-                <div class="item">
-                    <h2>CABINA DE FOTOS</h2>
-                    <img src="imagenes/interrogante.svg" alt="">
-                    <div class="cantidad">
-                        <button><img src="imagenes/lupa_menos.svg" alt=""></button>
-                        <div class="circle">
-                            <div class="circle"></div>
+                <div class="item precios-2">
+                    <div class="contenedor-flex precios-flex space-b">
+                        <div class="contenedor-flex precios-flex">
+                            <h2 class="subtitulo-precios-1">HORAS TOTALES <img src="imagenes/signoazul.png" alt="" class="interrogante"></h2>
                         </div>
-                        <button><img src="imagenes/lupa_mas.svg" alt=""></button>
+                        <div class="circle horas">3</div>
                     </div>
-                    <h2>HORAS</h2>
+                    <div class="input range">
+                        <input type="range" name="" id="sider" min="0" max="100" value="10" class="sider">
+                        <div class="image-mover"></div>
+                    </div>
                 </div>
-                <div class="item">
-                    <div class="contenedor-flex">
-                        <span>
-                            <h2>LUGAR</h2>
-                            <img src="imagenes/interrogante.svg" alt="">
-                        </span>
-                        <span><p>Seleccione una región</p></span>
+                <div class="item precios-3" >
+                    <div class="contenedor-flex precios-flex">
+                        <h2 class="subtitulo-precios-2">SESIÓN DE COMPROMISO <img src="imagenes/signonaranja.png" alt="" class="interrogante"></h2>
+                    </div>
+                    <div class="input checkbox">
+                        <label for="check" class="mycheck" id="mycheck-orange">
+                            <input type="checkbox" name="check" id="check">
+                            <span> <img src="imagenes/carita-_-.svg" alt=""></span>
+                        </label>
+                    </div>
+                    <h2 class="subtitulo-precios-2">NO</h2>
+                </div>
+                <div class="item precios-4">
+                    <div class="contenedor-flex precios-flex ">
+                        <h2 class="subtitulo-precios-3">VIDEO DE LA CEREMONIA <img src="imagenes/signoazul.png" alt="" class="interrogante"></h2>
+                        
+                    </div>
+                    <div class="input checkboxx">
+                        <label for="check-2" class="mycheck-2" id="mycheck-pink">
+                            <input type="checkbox" name="check-2" id="check-2">
+                            <span> <img src="imagenes/carita-_-.svg" alt=""></span>
+                        </label>
+                    </div>
+                    <h2 class="subtitulo-precios-3">NO</h2>
+                    <div class="relative">
+                        <img src="imagenes/anillos_naranja_Azul.svg" alt="" class="absolute anillos">
+                    </div>
+                </div>
+                <div class="item precios-5">
+                    <div class="contenedor-flex precios-flex space-a">
+                        <h2 class="subtitulo-precios-4">SOLO DIGITAL <img src="imagenes/signoblanco.png" alt="" class="interrogante"></h2>
+                    </div>
+                    <img src="imagenes/brujula.svg" alt="" class="brujula">
+                    <div class="contenedor-flex precios-flex space-a">
+                        <h2 class="subtitulo-precios-5">FILM + DIGITAL <img src="imagenes/signoazulito.png" alt="" class="interrogante"></h2>
+ 
+                    </div>
+                </div>
+                <div class="item precios-6">
+                    <div class="contenedor-flex precios-flex space-a">
+                        <h2 class="subtitulo-precios-6">CABINA DE FOTOS  <img src="imagenes/signoazul.png" alt="" class="interrogante"></h2>
+                    </div>
+                    <div class="cantidad contenedor-flex">
+                        <img src="imagenes/lupa-rosa.png" alt="" class="lupa">
+                        <div class="circle circulito contenedor-flex">
+                            <div class="circle circulito c-2"></div>
+                        </div>
+                        <img src="imagenes/lupa-mas.png" alt="" class="lupa">
+                    </div>
+                    <h2 class="subtitulo-precios-7">HORAS</h2>
+                </div>
+                <div class="item precios-7">
+                    <div class="contenedor-flex space-a">
+                        <div class="contenedor-flex precios-flex ">
+                            <h2 class="subtitulo-precios-8">LUGAR                             <img src="imagenes/signoblanco.png" alt=""class="interrogante"></h2>
+                        </div>
+                        <p class="texto-blanco">Seleccione una región</p>
                     </div>
                     <img src="imagenes/mapa.svg" alt="">
                 </div>
                 <img src="imagenes/camara.svg" alt="">
-                <div class="item">
-                    <h2>TOTAL</h2>
-                    <h1>$1,938</h1>
+                <div class="item precios-8">
+                    <h2 class="subtitulo-precios-9">TOTAL</h2>
+                    <h1 class="subtitulo-precios-10">$1,938</h1>
                 </div>
-                <div class="item">
+                <div class="item precios-9">
                     <h2>ENVÍA MI PAQUETE</h2>
                     <p>Email</p>
                     <hr>
@@ -220,5 +239,16 @@
         CHAT
     </div>
    </div>
+   <script>
+    const slider = document.getElementById('sider');
+    const image = document.querySelector('.image-mover');
+    function updateImagePosition() {
+    const value = slider.value;
+    image.style.left = value + '%';
+    }
+    slider.addEventListener('input', updateImagePosition);
+    updateImagePosition();
+   </script>
 </body>
+
 </html>
