@@ -97,7 +97,7 @@ header{
 .inicial div h1{
     color:#0153f9 ;
     text-align: center;
-    font-size:clamp(2rem, 10vw, 15rem);
+    font-size:clamp(2rem, 10vw, 7rem);
 }
 .img-ppal{
     width:  60vw;
@@ -585,9 +585,74 @@ a{
     width: 100px;
     border: 1px solid black;
   }
+  .d-none,.d-none-p{
+    display: none;
+  }
   @media screen and (min-width: 768px) {
     html{
         max-width: 2000px;
     }
-    
-  }
+    nav label{
+        display: none;
+    }
+    .items-navegador{
+        display: flex;
+        justify-content: end;
+    }
+    .items-navegador a{
+        font-size: 1.5rem;
+        padding-right: 3rem;
+    }
+    .img-ppal{
+        width:  40vw;
+        border: 2px solid black;
+        border-radius: 100%/70%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .d-none{
+        display: block;
+        width: 20vw;
+        border-radius: 10%;
+        border: 1px solid black;
+    }
+    .oculta-1{
+        top: 30%;
+        margin-top:12% ;
+    }
+    .oculta-2{
+        right: 1%;
+        bottom: -5%;
+    }
+    .inicial{
+        min-height: 30vh;
+    }
+    .inicial-cinco {
+        width: 20%;
+        margin-top: 17%;
+        left: 75%;
+      }
+    .nosotros{
+        padding-top: 28%;
+    }
+    .d-none-p{
+        display: block;
+    }
+    #grid-1,#grid-2{
+        width: 50vw;
+        position: absolute;
+    }
+    .contenedor-imagen-nosotros {
+        width: 40vw;
+        height: 30vh;}
+    .imagen-nosotros {
+        height: 100%;
+    } 
+    .contenedor-grid-t{
+        position: relative;
+        min-height: 40vh;
+    }
+    #grid-1{
+        left: 50%;
+    }
+}
